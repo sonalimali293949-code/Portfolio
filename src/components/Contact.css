@@ -1,0 +1,111 @@
+.contact-intro {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  margin-bottom: 2rem;
+  max-width: 520px;
+}
+
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  background: var(--bg);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  transition: all var(--transition);
+  text-decoration: none;
+}
+
+.contact-card:hover {
+  border-color: var(--accent-mid);
+  background: var(--accent-light);
+  transform: translateX(4px);
+}
+
+.cc-icon {
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.cc-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.cc-label {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.cc-value {
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.cc-arrow {
+  font-size: 14px;
+  color: var(--text-tertiary);
+  transition: color var(--transition);
+}
+
+.contact-card:hover .cc-arrow {
+  color: var(--accent);
+}
+
+/* ── Copy email bar ── */
+.contact-copy {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 18px;
+  background: var(--bg-secondary);
+  border: 0.5px solid var(--border);
+  border-radius: var(--radius-md);
+  flex-wrap: wrap;
+}
+
+.copy-email {
+  font-size: 14px;
+  color: var(--text-secondary);
+  flex: 1;
+  font-family: monospace;
+  letter-spacing: 0.3px;
+}
+
+.copy-btn {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 16px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  transition: background var(--transition);
+  white-space: nowrap;
+}
+
+.copy-btn:hover {
+  background: var(--accent-dark);
+}
+
+@media (max-width: 500px) {
+  .contact-copy { flex-direction: column; align-items: flex-start; }
+}
